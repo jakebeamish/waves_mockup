@@ -16,14 +16,14 @@ function draw() {
   drawWave(
     // 1 - mouseY / height,
     1,
-    0.0001 * (height - mouseY),
+    0.000000000001 * height - mouseY,
 
     // How to change phase so that it matches postion of selector?
 
-    40 * (mouseX / width),
-
+    10 * (mouseX / width),
     height * 0.75
   );
+
   line(0, height * 0.75, width, height * 0.75)
 }
 
